@@ -1,0 +1,50 @@
+@keyframes runningTextFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes runningTextFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.running-text-left {
+  animation: runningTextFromLeft 1.5s ease-out forwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.running-text-right {
+  animation: runningTextFromRight 1.5s ease-out forwards;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.pop-up-box {
+  animation: popUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.pop-up-box:nth-child(1) { animation-delay: 0.1s; }
+.pop-up-box:nth-child(2) { animation-delay: 0.2s; }
+.pop-up-box:nth-child(3) { animation-delay: 0.3s; }
+.pop-up-box:nth-child(4) { animation-delay: 0.4s; } 
