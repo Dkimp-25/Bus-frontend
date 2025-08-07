@@ -92,7 +92,7 @@ const Bookings = () => {
 
   return (
     <Box maxW="800px" mx="auto" py={8}>
-      <Heading mb={6}>My Bookings</Heading>
+      <Heading mb={6}>My Bookings so far</Heading>
       <VStack spacing={4} align="stretch">
         {bookings.length === 0 ? (
           <Text>No bookings found.</Text>
